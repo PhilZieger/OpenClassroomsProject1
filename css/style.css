@@ -101,6 +101,9 @@ body {
     position: absolute;
     padding-top: 63px;
 
+}
+
+.titlebody {
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -247,21 +250,14 @@ body {
     justify-content: flex-start;
     /* align-items: center; */
     flex-wrap: wrap;
-    gap: 36px;
+    gap: 34px;
     width: 914px;
     height: 50px;
     margin-top: 60px;
 }
 
 .filterText {
-    /*
-    position: absolute;
-    width: 54px;
-    height: 21px;
-    left: 0%;
-    top: 0%;
-    */
-    /* Title/Filter */
+    
     padding-top: 12px;
     font-family: 'Raleway';
     font-style: normal;
@@ -269,7 +265,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    
+    margin-left: 7px;
     color: #000000;  
 }
 
@@ -355,6 +351,276 @@ body {
     order: 0;
     flex-grow: 0;
 }
+
+.announce {
+    position: absolute;
+    width: 412px;
+    height: 19px;
+    margin-top: 38px;
+    margin-left: 35px;
+
+    /* Information */
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+
+    color: #000000;
+}
+
+.DisplayBody {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 40px;
+    width: 1340px;
+    height: 626px;
+    margin-top: 100px;
+}
+
+.ResultSearch {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 23px;
+
+    padding-top: 42px;
+    background: #F2F2F2;
+    border-radius: 20px;
+}
+
+.titlesearch {
+    margin-left: 40px;
+}
+
+.ShowResult {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 31px; 
+    margin-left: 40px;
+
+}
+
+.Card {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 9px;
+
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    /* White */
+
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.image {
+    box-sizing: border-box;
+
+    height: 130px;
+    width: 250px;
+    object-fit: cover;
+    
+    /* White */
+
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.TitleCard {
+    width: 204px;
+    height: 15px;
+    left: 16px;
+    top: calc(50% - 15px/2 + 36px);
+
+    /* Card/Title */
+    padding-left: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+}
+
+.Price {
+    width: 204px;
+    height: 15px;
+    left: 16px;
+    top: calc(50% - 15px/2 + 60px);
+
+    padding-left: 16px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+}
+
+.position {
+    padding-left: 16px;
+    padding-bottom: 11px;
+}
+
+
+.Top {
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 23px;
+
+    
+    background: #F2F2F2;
+    border-radius: 20px;
+}
+
+.FirstLigne {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* align-items: center; */
+    gap: 118px;
+}
+
+.TitleTop {
+    padding-top: 41px;
+    margin-left: 37px;
+}
+
+.chart {
+    padding-top: 46px;
+    padding-right: 42px;
+}
+
+.TopChamber {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    /* align-items: center; */
+    gap: 15px;
+
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    height: 130px;
+
+    /* White */
+
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin-left: 37px;
+    margin-right: 40px;
+}
+
+.TopPicture {
+    box-sizing: border-box;
+
+    width: 137px;
+    left: 0px;
+    top: 0%;
+    bottom: 0%;
+    object-fit: cover;
+
+    
+    /* White */
+
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.BoxTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    gap: 1px;
+    flex-flow: column wrap;
+    margin-bottom: 10px;
+}
+
+.LittleTitle {
+    padding-top: 16px;
+    width: 169px;
+    height: 38px;
+
+    /* Card/Title */
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.LittlePrice {
+    width: 169px;
+    height: 15px;
+    padding-bottom: 30px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #000000;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.LittleStars {
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin-bottom: 3px;
+    
+}
+
+
+
 
 .container {
     display: flex;
