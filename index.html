@@ -3,10 +3,80 @@
 <head>
   <meta charset="utf-8">
   <title>Booki</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/4a1a231342.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<!-- Booki Logo and header menu -->
+  <div class="divheader">
+    <div class="divlogo">
+      <img class="logo" src="assets/logo/Booki.png" alt="Logo Booki">
+    </div>
+    <div class="action">
+      <div class="hebergAction">
+        <p class="hebergement"><a class="selectable" href="#">Hébergements</a></p>
+      </div>
+      <div>
+        <p class="activity">Activités</p>
+      </div>
+    </div>
+  </div>
+
+<!-- Title and descripriotn -->
+<div>
+  <p class="title">Trouvez votre hébergement pour des vacances de rêve</p>
+</div>
+<div>
+  <p class="footer">En plein centre-ville ou en pleine nature</p>
+</div>
+
+<!-- Search fonction -->
+
+<div class="search">
+
+  <div class="flexstylelogo">
+    <i class="fa-solid fa-location-dot flexlogo"></i>
+  </div>
+
+  <div class="flexborder">
+    <input class="flextext" type="text" value="Marseille, France" />
+  </div>
+
+  <div class="flexsearch">
+    <button class="buttonsearch">Rechercher</button>
+  </div>
+  
+</div>
+
+<!-- Filter menu -->
+
+<div class="filter">
+
+  <div>
+    <p class="filterText">Filtres</p>
+  </div>
+
+  <div class="borderfilter borderFilter1">
+    <i class="fa-solid fa-money-bill-wave fa-xl LogoFilter"></i>
+    <p class="TextFilter">Économique</p>
+  </div>
+
+  <div class="borderfilter borderFilter2">
+    <i class="fa-solid fa-person fa-xl LogoFilter"></i>
+    <p class="TextFilter">Familial</p>
+  </div>
+
+  <div class="borderfilter borderFilter3">
+    <i class="fa-solid fa-heart fa-xl LogoFilter"></i>
+    <p class="TextFilter">Romantique</p>
+  </div>
+
+  <div class="borderfilter borderFilter4">
+    <i class="fa-solid fa-dog fa-xl LogoFilter"></i>
+    <p class="TextFilter">Animaux autorisés</p>
+  </div>
+
+</div>
 
 </body>
 </html>
