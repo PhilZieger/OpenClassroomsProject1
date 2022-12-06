@@ -2,195 +2,215 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Booki</title>
   <link rel="stylesheet" href="css/style.css">
   <script src="https://kit.fontawesome.com/4a1a231342.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <!-- Booki Logo and header menu -->
-  <div class="divheader">
+  <header class="divheader">
     <div class="divlogo">
       <img class="logo" src="assets/logo/Booki.png" alt="Logo Booki">
     </div>
-    <div class="action">
+    <nav class="action">
       <div class="hebergAction">
-        <p class="hebergement"><a class="selectable" href="#home">Hébergements</a></p>
+        <h2 class="hebergement"><a class="selectable" href="#home">Hébergements</a></h2>
       </div>
       <div>
         <div class="hebergAction">
-          <p class="activity"><a class="selectable" href="#activity">Activités</a></p>
+          <h2 class="activity"><a class="selectable" href="#activity">Activités</a></h2>
         </div>
       </div>
-    </div>
-  </div>
+    </nav>
+  </header>
 
 <!-- Title and descripriotn -->
-<div>
-  <p class="title titlebody">Trouvez votre hébergement pour des vacances de rêve</p>
-</div>
-<div>
-  <p class="footer">En plein centre-ville ou en pleine nature</p>
-</div>
+<section>
+  <h2 class="title titlebody">Trouvez votre hébergement pour des vacances de rêve</h2>
+  <h3 class="footer">En plein centre-ville ou en pleine nature</h3>
+</section>
 
 <!-- Search fonction -->
 
-<div class="search">
+<form action="#" method="post" class="search">
 
   <div class="flexstylelogo">
     <i class="fa-solid fa-location-dot flexlogo"></i>
   </div>
 
   <div class="flexborder">
-    <input class="flextext" type="text" value="Marseille, France" />
+    <input class="flextext" type="text" value="Marseille, France">
   </div>
 
-  <div class="flexsearch">
+  <div class="flexsearch hide2">
     <button class="buttonsearch">Rechercher</button>
   </div>
+
+  <div class="flexsearch hide">
+    <button class="buttonsearch"><i class="fa-solid fa-magnifying-glass fa-sm"></i></button>
+  </div>
   
-</div>
+</form>
 
 <!-- Filter menu -->
 
 <div class="filter">
 
   <div>
-    <p class="filterText">Filtres</p>
+    <h1 class="filterText">Filtres</h1>
   </div>
 
   <div class="borderfilter borderFilter1 borderFilterAction">
     <i class="fa-solid fa-money-bill-wave fa-xl LogoFilter"></i>
-    <p class="TextFilter">Économique</p>
+    <h1 class="TextFilter">Économique</h1>
   </div>
 
   <div class="borderfilter borderFilter2 borderFilterAction">
     <i class="fa-solid fa-person fa-xl LogoFilter"></i>
-    <p class="TextFilter">Familial</p>
+    <h1 class="TextFilter">Familial</h1>
   </div>
 
   <div class="borderfilter borderFilter3 borderFilterAction">
     <i class="fa-solid fa-heart fa-xl LogoFilter"></i>
-    <p class="TextFilter">Romantique</p>
+    <h1 class="TextFilter">Romantique</h1>
   </div>
 
   <div class="borderfilter borderFilter4 borderFilterAction">
     <i class="fa-solid fa-dog fa-xl LogoFilter"></i>
-    <p class="TextFilter">Animaux autorisés</p>
+    <h1 class="TextFilter">Animaux autorisés</h1>
   </div>
 
 </div>
 
-<div>
-  <p class="announce">Plus de 500 logements sont disponibles dans cette ville</p>
+<div class="FlexInfo">
+  <div class="BorderInfo">
+    <i class="fa-solid fa-info LogoFilter fa-sm Center"></i>
+  </div>
+  <h3 class="announce">Plus de 500 logements sont disponibles dans cette ville</h3>
 </div>
 
 <!-- Result of search and top-->
 
-<div class="DisplayBody" id="home">
+<article class="DisplayBody">
 
 
 
 
-  <div class="ResultSearch">
+  <div class="ResultSearch" id="home">
 
-    <div><p class="titlesearch titlebody">Hébergements à Marseille</p></div>
+    <h2 class="titlesearch titlebody">Hébergements à Marseille</h2>
 
     <div class="ShowResult">
 
-      <div class="Card">
-        <div>
-          <img class="image" src="assets/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Home Picture">
+      <a href="#" class="lien">
+        <div class="Card">
+          <div>
+            <img class="image" src="assets/hebergements/1_xlarge/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Home Picture">
+          </div>
+          <h2 class="TitleCard">Auberge La Canebière</h2>
+          <h3 class="Price">Nuit à partir de <b>25€</b></h3>
+          <div class="position">
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+          </div>
         </div>
-        <div class="TitleCard">Auberge La Canebière</div>
-        <div class="Price">Nuit à partir de <b>25€</b></div>
-        <div class="position">
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-regular fa-star LogoFilter fa-sm"></i>
-        </div>
-      </div>
+      </a>
 
-      <div class="Card">
-        <div>
-          <img class="image" src="assets/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Home Picture">
+      <a href="#" class="lien">
+        <div class="Card">
+          <div>
+            <img class="image" src="assets/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Home Picture">
+          </div>
+          <h2 class="TitleCard">Hôtel du port</h2>
+          <h3 class="Price">Nuit à partir de <b>52€</b></h3>
+          <div class="position">
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+          </div>
         </div>
-        <div class="TitleCard">Hôtel du port</div>
-        <div class="Price">Nuit à partir de <b>52€</b></div>
-        <div class="position">
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-regular fa-star LogoFilter fa-sm"></i>
-        </div>
-      </div>
+      </a>
 
-      <div class="Card">
-        <div>
-          <img class="image" src="assets/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Home Picture">
+      <a href="#" class="lien">
+        <div class="Card">
+          <div>
+            <img class="image" src="assets/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Home Picture">
+          </div>
+          <h2 class="TitleCard">Hôtel Les mouettes</h2>
+          <h3 class="Price">Nuit à partir de <b>76€</b></h3>
+          <div class="position">
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+          </div>
         </div>
-        <div class="TitleCard">Hôtel Les mouettes</div>
-        <div class="Price">Nuit à partir de <b>76€</b></div>
-        <div class="position">
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-regular fa-star LogoFilter fa-sm"></i>
-        </div>
-      </div>
+      </a>
 
-      <div class="Card">
-        <div>
-          <img class="image" src="assets/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Home Picture">
+      <a href="#" class="lien">
+        <div class="Card">
+          <div>
+            <img class="image" src="assets/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Home Picture">
+          </div>
+          <h2 class="TitleCard">Hôtel de la mer</h2>
+          <h3 class="Price">Nuit à partir de <b>46€</b></h3>
+          <div class="position">
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+          </div>
         </div>
-        <div class="TitleCard">Hôtel de la mer</div>
-        <div class="Price">Nuit à partir de <b>46€</b></div>
-        <div class="position">
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-regular fa-star LogoFilter fa-sm"></i>
-        </div>
-      </div>
+      </a>
 
-      <div class="Card">
-        <div>
-          <img class="image" src="assets/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Home Picture">
+      <a href="#" class="lien">
+        <div class="Card">
+          <div>
+            <img class="image" src="assets/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Home Picture">
+          </div>
+          <h2 class="TitleCard">Auberge Le Panier</h2>
+          <h3 class="Price">Nuit à partir de <b>23€</b></h3>
+          <div class="position">
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+            <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+          </div>
         </div>
-        <div class="TitleCard">Auberge Le Panier</div>
-        <div class="Price">Nuit à partir de <b>23€</b></div>
-        <div class="position">
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-regular fa-star LogoFilter fa-sm"></i>
-        </div>
-      </div>
+      </a>
 
-      <div class="Card">
-        <div>
-          <img class="image" src="assets/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Home Picture">
+      <a href="#" class="lien">
+        <div class="Card">
+          
+            <div>
+              <img class="image" src="assets/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Home Picture">
+            </div>
+            <h2 class="TitleCard">Hôtel Chez Amina</h2>
+            <h3 class="Price">Nuit à partir de <b>96€</b></h3>
+            <div class="position">
+              <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+              <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+              <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+              <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+              <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+            </div>
+          
         </div>
-        <div class="TitleCard">Hôtel Chez Amina</div>
-        <div class="Price">Nuit à partir de <b>96€</b></div>
-        <div class="position">
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-regular fa-star LogoFilter fa-sm"></i>
-        </div>
-      </div>
+      </a>
 
     </div>
 
     <div>
-      <p class="SubTitleBody"><a class="lien" href="#">Afficher plus</a></p>
+      <h2 class="SubTitleBody"><a class="lien" href="#">Afficher plus</a></h2>
     </div>
 
   </div>
@@ -202,105 +222,123 @@
   <div class="Top">
 
     <div class="FirstLigne">
-      <div><p class="TitleTop titlebody">Les plus populaires</p></div>
+      <h2 class="TitleTop titlebody">Les plus populaires</h2>
       <i class="fa-solid fa-chart-line LogoFilter chart"></i>
     </div>
 
-    <div class="TopChamber">
+    <div class="DisplayTop">
 
-      <img class="TopPicture" src="assets/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Home Picture">
+      <a href="#" class="lien">
+        <div class="TopChamber">
+
+          <img class="TopPicture" src="assets/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Home Picture">
 
 
-      <div class="BoxTop">
-        <div class="LittleTitle">Hôtel Le soleil du matin</div>
-        <div class="LittlePrice">Nuit à partir de <b>128€</b></div>
-        <div class="LittleStars">
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+          <div class="BoxTop">
+            <h2 class="LittleTitle">Hôtel Le soleil du matin</h2>
+            <h3 class="LittlePrice">Nuit à partir de <b>128€</b></h3>
+            <div class="LittleStars">
+              <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+              <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+              <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+              <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+              <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+            </div>
+          </div>
+
         </div>
-      </div>
+      </a>
 
-    </div>
+      <a href="#" class="lien">
+        <div class="TopChamber Space">
 
-    <div class="TopChamber Space">
-
-      <img class="TopPicture" src="assets/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Home Picture">
+          <img class="TopPicture" src="assets/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Home Picture">
 
 
-      <div class="BoxTop">
-        <div class="LittleTitle">Chambres d’hôtes Au cœur de l’eau</div>
-        <div class="LittlePrice">Nuit à partir de <b>71€</b></div>
-        <div class="LittleStars">
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+          <div class="BoxTop">
+            <h2 class="LittleTitle">Chambres d’hôtes Au cœur de l’eau</h2>
+            <h3 class="LittlePrice">Nuit à partir de <b>71€</b></h3>
+            <div class="LittleStars">
+              <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+              <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+              <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+              <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+              <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+            </div>
+          </div>
+
         </div>
-      </div>
+      </a>
 
-    </div>
+      <a href="#" class="lien">
+        <div class="TopChamber Space">
 
-    <div class="TopChamber Space">
-
-      <img class="TopPicture" src="assets/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Home Picture">
+          <img class="TopPicture" src="assets/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Home Picture">
 
 
-      <div class="BoxTop">
-        <div class="LittleTitle">Hôtel Bleu et Blanc</div>
-        <div class="LittlePrice">Nuit à partir de <b>68€</b></div>
-        <div class="LittleStars">
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
-          <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+          <div class="BoxTop">
+            <h2 class="LittleTitle">Hôtel Bleu et Blanc</h2>
+            <h3 class="LittlePrice">Nuit à partir de <b>68€</b></h3>
+            <div class="LittleStars">
+              <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+              <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+              <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+              <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+              <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+            </div>
+          </div>
+
         </div>
-      </div>
+      </a>
 
     </div>
 
   </div>
 
-</div>
+</article>
 
 <!-- Activity -->
 
 <div class="BoxActivity" id="activity">
 
-  <div class="TitleActivity">Activités à Marseille</div>
+  <h1 class="TitleActivity">Activités à Marseille</h1>
   <div class="ResultBoxActivity">
     
-    <div class="ShowActivityBox">
-      <img class="PictureActivity" src="assets/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Activity Picture">
-      <div class="SubBoxActivity">
-        <p class="TextActivity">Vieux-Port</p>
+    <a href="#" class="lien">
+      <div class="ShowActivityBox">
+        <img class="PictureActivity" src="assets/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Activity Picture">
+        <div class="SubBoxActivity">
+          <h2 class="TextActivity">Vieux-Port</h2>
+        </div>
       </div>
-    </div>
+    </a>
 
-    <div class="ShowActivityBox">
-      <img class="PictureActivity" src="assets/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Activity Picture">
-      <div class="SubBoxActivity">
-        <p class="TextActivity">Fort de Pomègues</p>
+    <a href="#" class="lien">
+      <div class="ShowActivityBox">
+        <img class="PictureActivity" src="assets/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Activity Picture">
+        <div class="SubBoxActivity">
+          <h2 class="TextActivity">Fort de Pomègues</h2>
+        </div>
       </div>
-    </div>
+    </a>
 
-    <div class="ShowActivityBox">
-      <img class="PictureActivity" src="assets/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Activity Picture">
-      <div class="SubBoxActivity">
-        <p class="TextActivity">Parc national des Calanques</p>
+    <a href="#" class="lien">
+      <div class="ShowActivityBox">
+        <img class="PictureActivity" src="assets/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Activity Picture">
+        <div class="SubBoxActivity">
+          <h2 class="TextActivity">Parc national des Calanques</h2>
+        </div>
       </div>
-    </div>
+    </a>
 
-    <div class="ShowActivityBox">
-      <img class="PictureActivity" src="assets/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activity Picture">
-      <div class="SubBoxActivity">
-        <p class="TextActivity">Notre-Dame-de-la-Garde</p>
+    <a href="#" class="lien">
+      <div class="ShowActivityBox">
+        <img class="PictureActivity" src="assets/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activity Picture">
+        <div class="SubBoxActivity">
+          <h2 class="TextActivity">Notre-Dame-de-la-Garde</h2>
+        </div>
       </div>
-    </div>
+    </a>
 
   </div>
 
@@ -308,26 +346,26 @@
 
 <!-- Footer -->
 
-<div class="FooterBox">
+<footer class="FooterBox">
   <div class="FooterBoxFlex">
-    <div class="SubTitle">A propos</div>
-    <p class="TextFooter">Fonctionnement du site</p>
-    <p class="TextFooter">Conditions générales</p>
-    <p class="TextFooter">Données et confidentialité</p>
+    <h1 class="SubTitle">A propos</h1>
+    <h3 class="TextFooter">Fonctionnement du site</h3>
+    <h3 class="TextFooter">Conditions générales</h3>
+    <h3 class="TextFooter">Données et confidentialité</h3>
   </div>
 
   <div class="FooterBoxFlex">
-    <div class="SubTitle">Nos Hébergement</div>
-    <p class="TextFooter">Charte qualité</p>
-    <p class="TextFooter">Proposer votre hôtel</p>
+    <h1 class="SubTitle">Nos Hébergement</h1>
+    <h3 class="TextFooter">Charte qualité</h3>
+    <h3 class="TextFooter">Proposer votre hôtel</h3>
   </div>
 
   <div class="FooterBoxFlex">
-    <div class="SubTitle">Assistance</div>
-    <p class="TextFooter">Centre d’aide</p>
-    <p class="TextFooter">Nous contacter</p>
+    <h1 class="SubTitle">Assistance</h1>
+    <h3 class="TextFooter">Centre d’aide</h3>
+    <h3 class="TextFooter">Nous contacter</h3>
   </div>
-</div>
+</footer>
 
 </body>
 </html>
