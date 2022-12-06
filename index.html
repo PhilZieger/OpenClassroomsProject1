@@ -14,10 +14,12 @@
     </div>
     <div class="action">
       <div class="hebergAction">
-        <p class="hebergement"><a class="selectable" href="#">Hébergements</a></p>
+        <p class="hebergement"><a class="selectable" href="#home">Hébergements</a></p>
       </div>
       <div>
-        <p class="activity">Activités</p>
+        <div class="hebergAction">
+          <p class="activity"><a class="selectable" href="#activity">Activités</a></p>
+        </div>
       </div>
     </div>
   </div>
@@ -56,22 +58,22 @@
     <p class="filterText">Filtres</p>
   </div>
 
-  <div class="borderfilter borderFilter1">
+  <div class="borderfilter borderFilter1 borderFilterAction">
     <i class="fa-solid fa-money-bill-wave fa-xl LogoFilter"></i>
     <p class="TextFilter">Économique</p>
   </div>
 
-  <div class="borderfilter borderFilter2">
+  <div class="borderfilter borderFilter2 borderFilterAction">
     <i class="fa-solid fa-person fa-xl LogoFilter"></i>
     <p class="TextFilter">Familial</p>
   </div>
 
-  <div class="borderfilter borderFilter3">
+  <div class="borderfilter borderFilter3 borderFilterAction">
     <i class="fa-solid fa-heart fa-xl LogoFilter"></i>
     <p class="TextFilter">Romantique</p>
   </div>
 
-  <div class="borderfilter borderFilter4">
+  <div class="borderfilter borderFilter4 borderFilterAction">
     <i class="fa-solid fa-dog fa-xl LogoFilter"></i>
     <p class="TextFilter">Animaux autorisés</p>
   </div>
@@ -84,7 +86,7 @@
 
 <!-- Result of search and top-->
 
-<div class="DisplayBody">
+<div class="DisplayBody" id="home">
 
 
 
@@ -110,6 +112,85 @@
         </div>
       </div>
 
+      <div class="Card">
+        <div>
+          <img class="image" src="assets/hebergements/1_xlarge/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Home Picture">
+        </div>
+        <div class="TitleCard">Hôtel du port</div>
+        <div class="Price">Nuit à partir de <b>52€</b></div>
+        <div class="position">
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+        </div>
+      </div>
+
+      <div class="Card">
+        <div>
+          <img class="image" src="assets/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Home Picture">
+        </div>
+        <div class="TitleCard">Hôtel Les mouettes</div>
+        <div class="Price">Nuit à partir de <b>76€</b></div>
+        <div class="position">
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+        </div>
+      </div>
+
+      <div class="Card">
+        <div>
+          <img class="image" src="assets/hebergements/1_xlarge/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Home Picture">
+        </div>
+        <div class="TitleCard">Hôtel de la mer</div>
+        <div class="Price">Nuit à partir de <b>46€</b></div>
+        <div class="position">
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+        </div>
+      </div>
+
+      <div class="Card">
+        <div>
+          <img class="image" src="assets/hebergements/1_xlarge/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Home Picture">
+        </div>
+        <div class="TitleCard">Auberge Le Panier</div>
+        <div class="Price">Nuit à partir de <b>23€</b></div>
+        <div class="position">
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+        </div>
+      </div>
+
+      <div class="Card">
+        <div>
+          <img class="image" src="assets/hebergements/1_xlarge/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Home Picture">
+        </div>
+        <div class="TitleCard">Hôtel Chez Amina</div>
+        <div class="Price">Nuit à partir de <b>96€</b></div>
+        <div class="position">
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <div>
+      <p class="SubTitleBody"><a class="lien" href="#">Afficher plus</a></p>
     </div>
 
   </div>
@@ -127,13 +208,12 @@
 
     <div class="TopChamber">
 
-
       <img class="TopPicture" src="assets/hebergements/1_xlarge/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Home Picture">
 
 
       <div class="BoxTop">
         <div class="LittleTitle">Hôtel Le soleil du matin</div>
-        <div class="LittlePrice">Nuit à partir de 128€</div>
+        <div class="LittlePrice">Nuit à partir de <b>128€</b></div>
         <div class="LittleStars">
           <i class="fa-solid fa-star LogoFilter fa-sm"></i>
           <i class="fa-solid fa-star LogoFilter fa-sm"></i>
@@ -144,8 +224,109 @@
       </div>
 
     </div>
+
+    <div class="TopChamber Space">
+
+      <img class="TopPicture" src="assets/hebergements/1_xlarge/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Home Picture">
+
+
+      <div class="BoxTop">
+        <div class="LittleTitle">Chambres d’hôtes Au cœur de l’eau</div>
+        <div class="LittlePrice">Nuit à partir de <b>71€</b></div>
+        <div class="LittleStars">
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="TopChamber Space">
+
+      <img class="TopPicture" src="assets/hebergements/1_xlarge/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Home Picture">
+
+
+      <div class="BoxTop">
+        <div class="LittleTitle">Hôtel Bleu et Blanc</div>
+        <div class="LittlePrice">Nuit à partir de <b>68€</b></div>
+        <div class="LittleStars">
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-solid fa-star LogoFilter fa-sm"></i>
+          <i class="fa-regular fa-star LogoFilter fa-sm"></i>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 
+</div>
+
+<!-- Activity -->
+
+<div class="BoxActivity" id="activity">
+
+  <div class="TitleActivity">Activités à Marseille</div>
+  <div class="ResultBoxActivity">
+    
+    <div class="ShowActivityBox">
+      <img class="PictureActivity" src="assets/activites/1_xlarge/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Activity Picture">
+      <div class="SubBoxActivity">
+        <p class="TextActivity">Vieux-Port</p>
+      </div>
+    </div>
+
+    <div class="ShowActivityBox">
+      <img class="PictureActivity" src="assets/activites/1_xlarge/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Activity Picture">
+      <div class="SubBoxActivity">
+        <p class="TextActivity">Fort de Pomègues</p>
+      </div>
+    </div>
+
+    <div class="ShowActivityBox">
+      <img class="PictureActivity" src="assets/activites/1_xlarge/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Activity Picture">
+      <div class="SubBoxActivity">
+        <p class="TextActivity">Parc national des Calanques</p>
+      </div>
+    </div>
+
+    <div class="ShowActivityBox">
+      <img class="PictureActivity" src="assets/activites/1_xlarge/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activity Picture">
+      <div class="SubBoxActivity">
+        <p class="TextActivity">Notre-Dame-de-la-Garde</p>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- Footer -->
+
+<div class="FooterBox">
+  <div class="FooterBoxFlex">
+    <div class="SubTitle">A propos</div>
+    <p class="TextFooter">Fonctionnement du site</p>
+    <p class="TextFooter">Conditions générales</p>
+    <p class="TextFooter">Données et confidentialité</p>
+  </div>
+
+  <div class="FooterBoxFlex">
+    <div class="SubTitle">Nos Hébergement</div>
+    <p class="TextFooter">Charte qualité</p>
+    <p class="TextFooter">Proposer votre hôtel</p>
+  </div>
+
+  <div class="FooterBoxFlex">
+    <div class="SubTitle">Assistance</div>
+    <p class="TextFooter">Centre d’aide</p>
+    <p class="TextFooter">Nous contacter</p>
+  </div>
 </div>
 
 </body>
