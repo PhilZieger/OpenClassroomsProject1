@@ -29,7 +29,7 @@
     justify-content: flex-end;
 }
 
-.hebergAction {
+.Desktop {
     top: 0px;
     width: 162px;
     height: 2px;
@@ -59,15 +59,15 @@
     color: #000000;
 }
 
-.selectable:hover {
+
+
+.hebergAction :hover {
     color: #0065FC;
     font-weight: 500;
 }
 
-
-
-.hebergAction:hover {
-    background: #0065FC;
+.hebergAction:hover .Desktop {
+    background: blue;
 }
 
 .activity {
@@ -267,6 +267,14 @@ body {
     color: #000000;  
 }
 
+.FilterBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 34px;
+}
+
 .borderfilter {
     display: flex;
     flex-direction: row;
@@ -282,25 +290,21 @@ body {
     margin-left: 7px;
     width: 175px;
     height: 48px;
-    top: 0%;
 }
 
 .borderFilter2 {
     width: 136px;
     height: 48px;
-    top: 0%;
 }
 
 .borderFilter3 {
     width: 172px;
     height: 48px;
-    top: 0%;
 }
 
 .borderFilter4 {
     width: 226px;
     height: 48px;
-    top: 0%;
 }
 
 .borderFilterAction:hover {
@@ -720,7 +724,7 @@ body {
 .FooterBox {
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 235px;
 
@@ -770,6 +774,9 @@ body {
 @media screen and (min-width: 769px) and (max-width: 992px) { /* Tablette */
     * {
         max-width: 992px;
+    }
+    .FilterBox {
+        gap: 15px;
     }
     .filter {
         gap: 15px;
@@ -936,6 +943,9 @@ body {
     * {
         max-width: 768px;
     }
+    body {
+        margin-left: 0px;
+    }
     .divheader {
         width: 768px;
         display: flex;
@@ -946,45 +956,32 @@ body {
     .divlogo {
         margin-top: 21px;
         margin-left: 157px;
-
     }
     .action {
         justify-content: flex-start;
     }
-    .hebergAction {
-        margin-top: 49px;
+    .Desktop {
+        display: none;
+    }
+    .hebergAction:hover .Mobile {
+        background: blue;
+    }
+    .Mobile {
+        margin-top: 23px;
         width: 187px;
         height: 3px;
         background: #F2F2F2;
     }
-    .hebergement {
-        
+    .hebergement {       
         padding-top: 0px;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-    
-    
-        color: #000000;
     }
     .activity {
-
         padding-top: 0px;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-    
-        text-align: center;
-    
-        color: #000000;
     }
     .title {
         margin-top: 31px;
         margin-left: 20px;
+        width: 298px;
     
     }
     .footer {
@@ -1038,5 +1035,211 @@ body {
     }
     .hide2 {
         display: none;
+    }
+    .filter {
+        gap: 15px;
+        width: 335px;
+        height: 160px;
+        margin-top: 34px;
+        margin-left: 20px;
+    }
+    .FilterBox {
+        flex-direction: row;
+        gap: 14px;
+    }
+    .borderfilter {
+        justify-content: flex-start;
+        padding-left: 13px;
+        gap: 5px;
+    } 
+    .borderFilter1 {
+        margin-left: 0px;
+        width: 160px;
+        height: 50px;
+    }
+    .borderFilter2 {
+        width: 160px;
+        height: 50px;
+    }
+    .borderFilter3 {
+        width: 160px;
+        height: 50px;
+    }
+    .borderFilter4 {
+        width: 160px;
+        height: 50px;
+    }
+    .TextFilter {
+        font-size: 11px;
+        line-height: 13px;
+    }
+    .FlexInfo {
+        flex-direction: column;
+        gap: 11px;
+        margin-top: 40px;
+        margin-left: 20px;
+        width: 350px;
+        height: 50px;
+    }
+    .announce {
+        width: 298px;
+        margin-top: 3px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+    
+    
+        color: #000000;
+    }
+    .Top {
+        order: 1;
+        width: 375px;
+        height: 590px;
+        gap: 11px;
+        border-radius: 0px;
+    }
+    .FirstLigne {
+        justify-content: space-between;
+        gap: 54px;
+        padding-bottom: 15px;
+    }
+    .Space {
+        margin-top: 0px;
+    }
+    .TitleTop {
+        padding-top: 28px;
+        margin-left: 20px;
+    }
+    .chart {
+        padding-top: 35px;
+        padding-right: 21px;
+    }
+    .TopChamber {
+   
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+    
+        height: 145px;
+    
+        background: #FFFFFF;
+        border-radius: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .LittlePrice {
+        margin-top: 15px;
+    }
+    .LittleStars {
+        margin-top: 15px;  
+    }
+    .ResultSearch {
+        flex-direction: row;
+        order: 2;
+        width: 375px;
+        height: 1400px;
+        gap: 19px;
+    
+        padding-top: 26px;
+        background: #FFFFFF;
+        border-radius: 0px;
+    }
+    .titlesearch {
+        margin-left: 20px;
+    }
+    .ShowResult {
+        gap: 12px; 
+        margin-left: 20px;
+    }
+    .Card {
+        justify-content: flex-start;
+        height: 199px;
+        gap: 5px;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        background: #FFFFFF;
+        border-radius: 20px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    }
+    .image {
+        box-sizing: border-box;
+    
+        height: 124px;
+        width: 335px;
+        object-fit: cover;
+    
+        border: 5px solid #FFFFFF;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .DisplayBody {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 0px;
+        width: 380px;
+        height: 100%;
+    }
+    .SubTitleBody {
+        padding-left: 20px;
+        padding-bottom: 0px;
+    }
+    .position {
+        padding-left: 16px;
+        padding-bottom: 11px;
+    }
+    .BoxActivity {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 18.47px; 
+        padding-top: 90px;
+        width: 380px;
+    }
+    .TitleActivity {
+        width: 150px;
+        height: 50px;
+        margin-left: 20px;
+    }
+    .ResultBoxActivity {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 24px;
+        margin-left: 20px;
+    }
+    .ShowActivityBox {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 334px;
+        max-width: 334px;
+        height: 190px;
+        max-height: 190px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    }
+    .PictureActivity {
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        height: 134px;
+        width: 334px;
+    }
+    .FooterBox {
+        flex-direction: column;
+        gap: 40px;
+        width: 375px;
+        height: 501px;
+        margin-top: 80px;
+        padding-left: 30px;
+        padding-top: 45px;
+        background: #F2F2F2;
     }
 }
