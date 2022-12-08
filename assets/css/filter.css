@@ -1,0 +1,83 @@
+.filter { 
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 34px;
+    width: 905px;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 7px;
+    margin-right: 464px;
+}
+.filterText {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;  
+}
+.FilterBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 34px;
+}
+.lien:link {
+    text-decoration:none;
+    color: #000000;
+}
+.lien:visited {
+    text-decoration:none;
+    color: #000000;
+}
+.borderfilter {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+}
+.borderFilter1 {
+    margin-left: 7px;
+    margin-right: 0px;
+    width: 175px;
+    height: 48px;
+}
+.borderFilter2 {
+    width: 136px;
+    height: 48px;
+}
+.borderFilter3 {
+    width: 172px;
+    height: 48px;
+}
+.borderFilter4 {
+    width: 226px;
+    height: 48px;
+}
+.borderFilterAction:hover {
+    background: #DEEBFF;
+}
+.LogoFilter {
+    color: #0065FC;
+}
+.TextFilter {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: #000000;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

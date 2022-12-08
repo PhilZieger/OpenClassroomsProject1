@@ -1,0 +1,42 @@
+.FooterBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 235px;
+    width: 1340px;
+    height: 220px;
+    margin-top: 1px;
+    margin-bottom: 0px;
+    padding-left: 70px;
+    padding-right: 340px;
+    padding-top: 45px;
+    padding-bottom: 53px;
+    background: #F2F2F2;
+}
+.FooterBoxFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style-type: none;
+}
+.SubTitle {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 0px;
+    padding-bottom: 8px;
+    color: #000000;
+}
+.TextFooter {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}

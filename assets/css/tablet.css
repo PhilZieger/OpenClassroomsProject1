@@ -1,0 +1,157 @@
+@media screen and (min-width: 769px) and (max-width: 992px) { /* Tablette */
+    body {
+        max-width: 992px;
+    }
+    .FilterBox {
+        gap: 15px;
+    }
+    .filter {
+        gap: 15px;
+        width: 850px;
+        height: 48px;
+        margin-top: 32px;
+    }
+    .filterText {
+        margin-left: 0px;
+    }
+    .borderFilterAction {
+        margin-left: 5px;
+    }
+    .FlexInfo {
+        margin-left: 0px;
+    }
+    .DisplayBody {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 53px;
+        max-width: 800px;
+        height: 969px;
+        display: flex;
+    }
+    .ResultSearch {
+        width: 100%; 
+    }
+    .ShowResult {
+        gap: 13px;
+        margin-left: 20px;
+    }
+    .titlesearch {
+        margin-left: 20px;
+    }
+    .Top {
+        gap: 26px;
+        height: 280px;
+        width: 100%;
+    }
+    .DisplayTop {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-left: 20px;
+    }
+    .chart {
+        padding-top: 39px;
+        padding-right: 40px;
+    }
+    .TitleTop {
+        padding-top: 34px;
+        margin-left: 20px;
+    } 
+    .FirstLigne {
+        justify-content: space-between;
+    }
+    .TopChamber {
+        gap: 10px;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        height: 145px;
+        width: 240px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .TopPicture {
+        width: 106px;
+    }
+    .LittleTitle {
+        padding-top: 12px;
+        width: 111px;
+        height: 32px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .Space {
+        margin-top: 0px;
+    }
+    .LittlePrice {
+        width: 130px;
+        height: 32px;
+        margin-top: 15px;
+        font-size: 13px;
+        line-height: 15px;
+    }
+    .LittleStars {
+        margin-top: 15px;   
+    }
+    .BoxTop {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 15px;
+        flex-flow: column wrap;
+        margin-bottom: 0px;
+    }
+    .BoxActivity {
+        gap: 18.47px; 
+        padding-top: 70px;
+        width: 100%;
+    }
+    .ResultBoxActivity {
+        gap: 25px;
+    }
+    .ShowActivityBox {
+        width: 182px;
+        max-width: 182px;
+        height: 267px;
+        left: 0px;
+        top: 1160.49px;
+        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    }
+    .PictureActivity {
+        height: 211px;
+        width: 182px;
+    }
+    .SubBoxActivity {    
+        width: 182px;
+    }
+    .TextActivity {
+        width: 182px;
+        height: 15px;
+        margin-left: 19px;
+        padding-top: auto;
+        font-weight: bold;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+    }
+    .FooterBox {
+        gap: 70px;
+        max-width: 800px;
+        width: 100%;
+        height: 220px;
+        margin-top: 61px;
+        padding-left: 70px;
+        padding-top: 45px;
+    }
+}
