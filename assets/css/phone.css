@@ -1,113 +1,131 @@
 @media screen and (max-width: 768px) { /* Mobile */
     body {
         max-width: 768px;
+        margin: 0 auto;
     }
     .divheader {
-        width: 768px;
-        display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        gap: 49px;
+        align-items: center;
+        width: 100%;
     }
     .divlogo {
-        margin-top: 21px;
-        margin-left: 157px;
+        padding-top: 21px;
+        padding-bottom: 0px;
     }
-    .action {
-        justify-content: flex-start;
+    .logo {
+        width: 61.09px;
+        height: 19px;
     }
-    .Desktop {
-        display: none;
+    .boutton {
+        justify-content: center;
     }
-    .hebergAction:hover .Mobile {
-        background: blue;
+    .MenuBoutton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 48px;
+        padding-bottom: 23px;
+        width: 100%;
+        text-decoration: none;
+        background: linear-gradient(
+            to top,
+            #F2F2F2 0%,
+            #F2F2F2 2px,
+            transparent 3px
+        )
+        no-repeat;
+        background-size: 100% 100%;
     }
-    .Mobile {
-        margin-top: 23px;
-        width: 187px;
-        height: 3px;
-        background: #F2F2F2;
+    .MenuBoutton:hover {
+        background: linear-gradient(
+            to top,
+            #0065fc 0%,
+            #0065fc 2px,
+            transparent 3px
+        )
+        no-repeat;
     }
-    .hebergement {       
-        padding-top: 0px;
-    }
-    .activity {
-        padding-top: 0px;
-    }
-    .title {
+    .sectionForm {
+        margin: 0 auto;
+        width: 300px;
+        gap: 13px;
         margin-top: 31px;
-        margin-left: 20px;
-        width: 298px;
-    }
-    .footer {
-        margin-top: 13px;
-        margin-left: 20px;
+        margin-bottom: 20px;
     }
     .search {
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        padding-top: 36px;
-        width: 332px;
+        padding-top: 16px;
+        padding-bottom: 11px;
+        width: 350px;
         height: 50px;
-        padding-left: 22px;
-    } 
-    .flexlogo {
-        margin-top: 15px;
-        margin-left: 18px;       
+    }
+    .flexstylelogo {
+        order: 0;
     }
     .flexborder {
         width: 232px;
+        height: 50px;
+        background: #FFFFFF;
+        order: 0;
     }
     .flextext {
-        margin-left: 0%;
-        margin-top: 5%;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: left;
+        border: none;
+        color: #000000;
     }
     .flexsearch {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        padding: 15px 16px;
-        gap: 10px;
-        order: 3;
-        width: 50px;
-        height: 49px;
-        left: 341px;
-        top: 200px;
-        background: #0065FC;
-        border: 1px solid #0065FC;
-        border-radius: 0px 15px 15px 0px;
+        order: 0;
     }
     .buttonsearch {
-        width: 15px;
-        height: 15px;
-        padding-top: 0px;
+        width: 50px;
+        height: 50px;
+        border-radius: 0px 15px 15px 0px;
     }
     .hide {
-        display: content;
+        display: contents;
     }
     .hide2 {
         display: none;
     }
-    .filter {
+    .filter { 
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        align-items: flex-start;
         gap: 15px;
-        width: 335px;
-        height: 160px;
-        margin-top: 34px;
-        margin-left: 20px;
+        width: 334px;
+        height: 154px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
     .FilterBox {
+        display: flex;
         flex-direction: row;
-        gap: 14px;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 17px 14px;
     }
     .borderfilter {
         justify-content: flex-start;
+        gap: 14px;
         padding-left: 13px;
-        gap: 5px;
-    } 
+        padding-right: 0px;
+    }
     .borderFilter1 {
         margin-left: 0px;
+        margin-right: 0px;
         width: 160px;
         height: 50px;
     }
@@ -124,132 +142,153 @@
         height: 50px;
     }
     .TextFilter {
-        font-size: 11px;
-        line-height: 13px;
-    }
-    .FlexInfo {
-        flex-direction: column;
-        gap: 11px;
-        margin-top: 40px;
-        margin-left: 20px;
-        width: 350px;
-        height: 50px;
-    }
-    .announce {
-        width: 298px;
-        margin-top: 3px;
         font-family: 'Raleway';
         font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 13px;
         color: #000000;
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+    }
+    .FlexInfo {
+        margin: 0 auto;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 11px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .BorderInfo {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 24px;
+        height: 24px;
+        border: 1px solid #D9D9D9;
+        border-radius: 20px;
+    }
+    .announce {
+        width: 300px;
+        height: 40px;
+    }
+    .DisplayBody {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 0px;
+        width: 375px;
+        height: 2100px;
+        margin-top: 19px;
+        margin-bottom: 0px;
+        
     }
     .Top {
         order: 1;
         width: 375px;
-        height: 590px;
-        gap: 11px;
-        border-radius: 0px;
-    }
-    .FirstLigne {
-        justify-content: space-between;
-        gap: 54px;
-        padding-bottom: 15px;
-    }
-    .Space {
-        margin-top: 0px;
-    }
-    .TitleTop {
-        padding-top: 28px;
-        margin-left: 20px;
-    }
-    .chart {
-        padding-top: 35px;
-        padding-right: 21px;
-    }
-    .TopChamber {
-        left: 0%;
-        right: 0%;
-        top: 0%;
-        bottom: 0%;
-        height: 145px;
-        background: #FFFFFF;
-        border-radius: 20px;
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-    .LittlePrice {
-        margin-top: 15px;
-    }
-    .LittleStars {
-        margin-top: 15px;  
-    }
-    .ResultSearch {
-        flex-direction: row;
-        order: 2;
-        width: 375px;
-        height: 1400px;
-        gap: 19px;
-        padding-top: 26px;
-        background: #FFFFFF;
-        border-radius: 0px;
-    }
-    .titlesearch {
-        margin-left: 20px;
-    }
-    .ShowResult {
-        gap: 12px; 
-        margin-left: 20px;
-    }
-    .Card {
-        justify-content: flex-start;
-        height: 199px;
-        gap: 5px;
-        left: 0%;
-        right: 0%;
-        top: 0%;
-        bottom: 0%;
-        background: #FFFFFF;
-        border-radius: 20px;
-        filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-    }
-    .image {
-        box-sizing: border-box;
-        height: 124px;
-        width: 335px;
-        object-fit: cover;
-        border: 5px solid #FFFFFF;
-        border-radius: 20px 20px 0px 0px;
-    }
-    .DisplayBody {
+        display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        gap: 0px;
-        width: 380px;
-        height: 100%;
-    }
-    .SubTitleBody {
-        padding-left: 20px;
+        gap: 26px;
+        background: #F2F2F2;
+        border-radius: 0px;
         padding-bottom: 0px;
+        padding-top: 0px;
     }
-    .position {
-        padding-left: 16px;
-        padding-bottom: 11px;
+    .FirstLigne {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0px;
+        padding-left: 37px;
+        padding-right: 42px;
+        padding-top: 41px;
+        padding-bottom: 0px; 
     }
-    .BoxActivity {
+    .DisplayTop {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 26px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-bottom: 20px;
+        margin-top: 0px;
+    }
+    .ResultSearch {
+        order: 2;
+        width: 375px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         flex-wrap: wrap;
-        gap: 18.47px; 
-        padding-top: 90px;
-        width: 380px;
+        gap: 19px;
+        padding-top: 26px;
+        padding-bottom: 0px;
+        background: #FFFFFF;
+        border-radius: 0px;
+    }
+    .titlesearch {
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    .ShowResult {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    .Card {
+        width: 335px;
+        height: 200px;
+    }
+    .image {
+        width: 335px;
+        height: 124px;
+        box-sizing: border-box;
+        object-fit: cover;
+        border: 5px solid #FFFFFF;
+        border-radius: 20px 20px 0px 0px;
+    }
+    .SubTitleBody {
+        padding-left: 44px;
+        padding-right: 0px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+    }
+    .BoxActivity {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 23px; 
+        margin-top: 60px;
+        margin-bottom: 60px;
+        width: 334px;
     }
     .TitleActivity {
         width: 150px;
-        height: 50px;
-        margin-left: 20px;
+        height: 30px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+        color: #000000;
     }
     .ResultBoxActivity {
         display: flex;
@@ -257,7 +296,6 @@
         justify-content: flex-start;
         flex-wrap: wrap;
         gap: 24px;
-        margin-left: 20px;
     }
     .ShowActivityBox {
         display: flex;
@@ -265,27 +303,31 @@
         justify-content: flex-start;
         flex-wrap: wrap;
         width: 334px;
-        max-width: 334px;
         height: 190px;
-        max-height: 190px;
         filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     }
     .PictureActivity {
-        left: 0%;
-        right: 0%;
-        top: 0%;
-        bottom: 0%;
-        height: 134px;
         width: 334px;
+        height: 134px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        object-fit: cover;
     }
     .FooterBox {
+        margin: 0 auto;
+        display: flex;
         flex-direction: column;
+        justify-content: flex-start;
+        flex-wrap: wrap;
         gap: 40px;
-        width: 375px;
-        height: 501px;
-        margin-top: 80px;
+        width: 334px;
+        height: 500px;
+        margin-top: 1px;
+        margin-bottom: 0px;
         padding-left: 30px;
+        padding-right: 0px;
         padding-top: 45px;
+        padding-bottom: 53px;
         background: #F2F2F2;
     }
 }

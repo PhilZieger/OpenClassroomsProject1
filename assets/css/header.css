@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 1400px;
 }
 .divlogo {
     padding-top: 44px;
@@ -11,54 +12,44 @@
     width: 61.09px;
     height: 19px;
 }
-.action {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-.hebergAction {
-    list-style-type: none;
-}
-.Desktop {
-    top: 0px;
-    width: 162px;
-    height: 2px;
-}
-.hebergement {
-    padding-top: 48px;
-    padding-bottom: 0px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
+a {
+    text-decoration: none;
     color: #000000;
+  }
+.boutton {
+  display: flex;
+  justify-content: flex-end;
 }
-.activity {
-    padding-top: 48px;
-    padding-bottom: 0px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-align: center;
-    color: #000000;
+.MenuBoutton {
+  text-decoration: none;
+  padding: 46px;
+  background: linear-gradient(
+      to bottom,
+      #0065fc 0%,
+      #0065fc 2px,
+      transparent 0px
+    )
+    no-repeat;
+  background-size: 0 100%;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #000000;
+} 
+.MenuBoutton:hover {
+  background-size: 100% 100%;
 }
-.selectable:link {
-    text-decoration:none;
-    color: #000000;
+ul {
+  list-style-type: none;
 }
-.selectable:visited {
-    text-decoration:none;
-    color: #000000;
+.colorchange1:hover .colorHeberg {
+  color: #0065FC;
+  font-weight: 500;
 }
-.hebergAction:hover .Desktop {
-    background: blue;
-}
-
-.hebergAction:hover .selectable {
-    color: #0065FC;
-    font-weight: 500;
+.colorchange2:hover .colorActivity {
+  color: #0065FC;
+  font-weight: 500;
 }
