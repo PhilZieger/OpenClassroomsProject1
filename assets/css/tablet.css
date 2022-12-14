@@ -1,7 +1,10 @@
 @media screen and (min-width: 769px) and (max-width: 992px) { /* Tablette */
     body {
         max-width: 992px;
+        min-width: 0;
         margin: 0 50px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
     .divheader {
         width: 900px;

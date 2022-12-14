@@ -1,6 +1,9 @@
 body {
     max-width: 1400px;
-    margin: 0 auto; 
+    min-width: 1400px;
+    margin: 0 auto;
+    padding-left: 55px;
+    padding-right: 55px;
 }
 * {
     box-sizing: border-box;
