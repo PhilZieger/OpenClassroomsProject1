@@ -93,7 +93,7 @@
 .TitleCard {
     width: 204px;
     padding-left: 16px;
-    padding-right: auto;
+    padding-right: 0px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
@@ -104,7 +104,7 @@
 .Price {
     width: 204px;
     padding-left: 16px;
-    padding-right: auto;
+    padding-right: 0px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 400;
