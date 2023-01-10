@@ -63,7 +63,7 @@
 }
 .titlesearch {
     padding-left: 40px;
-    padding-right: 555px;
+    padding-right: 500px;
 }
 .ShowResult {
     display: flex;
@@ -129,7 +129,9 @@
 }
 .SubTitleBody {
     padding-left: 44px;
-    padding-right: 720px;
+    padding-right: 680px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
